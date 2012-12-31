@@ -1,6 +1,9 @@
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/supernexus/overlay/common
 
+# Common dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/supernexus/overlay/dictionaries
+
 # Common product property overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
