@@ -1,3 +1,4 @@
+add_lunch_combo grouper-userdebug
 add_lunch_combo i777-userdebug
 add_lunch_combo i9100-userdebug
 add_lunch_combo i9100g-userdebug
