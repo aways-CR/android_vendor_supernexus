@@ -41,6 +41,11 @@ PRODUCT_COPY_FILES += \
     vendor/supernexus/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/supernexus/prebuilt/common/xbin/su:system/xbin/su
 
+# Optional SN packages
+PRODUCT_PACKAGES += \
+    SoundRecorder \
+    Basic
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
