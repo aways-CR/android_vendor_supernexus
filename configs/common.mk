@@ -46,7 +46,23 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    bash \
+    nano
+
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
 
 # Bring in all video prebuilts
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
