@@ -1,4 +1,5 @@
 add_lunch_combo galaxysmtd-userdebug
+add_lunch_combo d2att-userdebug
 add_lunch_combo grouper-userdebug
 add_lunch_combo i777-userdebug
 add_lunch_combo i9100-userdebug
