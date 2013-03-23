@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # SuperSU (Root) support
 PRODUCT_COPY_FILES += \
+    vendor/supernexus/prebuilt/common/app/SuperSUNoNag-v1.00.apk:system/app/SuperSUNoNag-v1.00.apk \
     vendor/supernexus/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/supernexus/prebuilt/common/xbin/su:system/xbin/su
 
