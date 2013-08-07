@@ -54,7 +54,12 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs \
     bash \
-    nano
+    nano \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g
 
 # Openssh
 PRODUCT_PACKAGES += \
