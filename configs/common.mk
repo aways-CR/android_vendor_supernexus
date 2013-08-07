@@ -15,6 +15,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+# SELinux
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/supernexus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
@@ -68,6 +72,12 @@ PRODUCT_PACKAGES += \
 # rsync
 PRODUCT_PACKAGES += \
     rsync
+
+# SELinux filesystem labels
+PRODUCT_COPY_FILES += \
+     vendor/supernexus/prebuilt/common/etc/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+
+
 
 # Bring in all video prebuilts
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
