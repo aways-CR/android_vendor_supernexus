@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
-     vendor/supernexus/prebuilt/common/etc/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+     vendor/supernexus/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
 # Bring in all video prebuilts
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
