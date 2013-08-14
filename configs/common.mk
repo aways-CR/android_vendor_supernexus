@@ -19,14 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-# Superuser
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.supernexus.superuser
-
-PRODUCT_PACKAGES += \
-    Superuser \
-    su
-
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/supernexus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
