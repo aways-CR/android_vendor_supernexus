@@ -19,9 +19,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-# Superuser
+# Embed superuser into settings
 SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.supernexus.superuser
+
+# Enable root for adb+apps
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=3
 
 PRODUCT_PACKAGES += \
     Superuser \
