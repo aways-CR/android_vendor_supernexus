@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 # SuperSU (Root) support
 PRODUCT_COPY_FILES += \
     vendor/supernexus/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/supernexus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/Superuser.apk \
     vendor/supernexus/prebuilt/common/xbin/su:system/xbin/su
 
 # Optional SN packages
