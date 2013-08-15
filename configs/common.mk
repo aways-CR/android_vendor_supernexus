@@ -19,17 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
-# Embed superuser into settings
-SUPERUSER_EMBEDDED := true
-
-# Enable root for adb+apps
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
-
-PRODUCT_PACKAGES += \
-    Superuser \
-    su
-
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/supernexus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
@@ -50,6 +39,13 @@ PRODUCT_COPY_FILES += \
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/supernexus/prebuilt/common/etc/mkshrc:system/etc/mkshrc
+
+# SuperSU (Root) support
+PRODUCT_COPY_FILES += \
+    vendor/supernexus/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/supernexus/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/supernexus/prebuilt/common/xbin/daemonsu:system/xbin/daemonsu \
+    vendor/supernexus/prebuilt/common/xbin/su:system/xbin/su
 
 # Optional SN packages
 PRODUCT_PACKAGES += \
