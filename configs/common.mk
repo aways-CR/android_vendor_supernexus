@@ -89,3 +89,5 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # Inherit common product build prop overrides
 -include vendor/supernexus/configs/common_versions.mk
+
+-include vendor/supernexus/sepolicy/sepolicy.mk
